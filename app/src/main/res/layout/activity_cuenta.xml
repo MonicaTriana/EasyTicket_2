@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cuenta_activity">
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/general"
+        android:textColor="#184BBE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:text="@string/monica"
+        android:textColor="#184BBE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="120dp" />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="138dp"
+        android:text="@string/monica_rt_outlook_com"
+        android:textColor="#0F2C6D"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cambiarcuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/cambiar_cuenta"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="80dp" />
+    <View
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/cambiarcuenta"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/cambiarcontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cambiarcuenta"
+        android:layout_marginTop="30dp"
+        android:text="@string/cambiar_contrase_a"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="80dp" />
+    <View
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/cambiarcontraseña"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/cerrarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cambiarcontraseña"
+        android:layout_marginTop="30dp"
+        android:text="@string/cerrar_seci_n"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="80dp" />
+    <View
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/cerrarsesion"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/casablanca"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="60dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/busqueda"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="128dp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/camera1"
+
+            android:layout_marginStart="197dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ajustes_vacio"
+            android:layout_marginStart="263dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/lock"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logout"
+        android:layout_marginStart="45dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/cuenta"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/lock"
+        android:layout_marginStart="45dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/cuenta"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="220dp"
+        app:srcCompat="@drawable/config"
+        android:layout_marginStart="45dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="95dp"
+        app:srcCompat="@drawable/usercircle"
+        android:layout_marginStart="35dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

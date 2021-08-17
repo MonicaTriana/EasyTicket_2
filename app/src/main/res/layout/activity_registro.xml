@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro_activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/logodos"
+        android:layout_marginStart="10dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/presupuesto"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imageView7"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/mi_presupuesto"
+        android:textAllCaps="false"
+        android:textColor="#0794FE"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/btn_gastos"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imageView7"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/mis_gastos"
+        android:textAllCaps="false"
+        android:textColor="#0794FE"
+        android:textSize="10sp"
+        android:layout_marginStart="127dp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/mis_tickets"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imageView7"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/mis_tickets"
+        android:textAllCaps="false"
+        android:textColor="#0794FE"
+        android:textSize="10sp"
+        android:layout_marginStart="243dp"
+        tools:ignore="SmallSp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/casa1"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="128dp"
+            app:srcCompat="@drawable/busqueda"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="197dp"
+            app:srcCompat="@drawable/camera1"
+
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="263dp"
+            app:srcCompat="@drawable/ajustes_vacio"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:gravity="center"
+        android:text="@string/registro_de_ticket"
+        android:textColor="#184BBE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView33"
+        android:layout_margin="10dp"
+        android:divider="@color/white">
+    </ListView>
+
+    <Button
+        android:id="@+id/btnticket"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listview"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/agregar_ticket"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corners_blue"
+        android:textAllCaps="false">
+
+    </Button>
+
+
+</RelativeLayout>

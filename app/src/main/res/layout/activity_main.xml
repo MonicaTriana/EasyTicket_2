@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/logodos"
+        android:layout_marginStart="-10dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/finanzas"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="-47dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/unete_al_cambio"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/con_easy_ticket_podr_s_tener_un_mejor_control_de_tus_finanzas_capturar_cada_ticket_al_momento_de_realizar_una_compra_comparar_precios_y_ahorrar"
+        android:textColor="#505050"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="155dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_below="@id/textView1"
+        android:layout_toEndOf="@id/button2"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/iniciar_sesi_n"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="155dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/crear_cuenta"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="20dp" />
+
+
+
+</RelativeLayout>

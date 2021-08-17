@@ -1,0 +1,2 @@
+rootProject.name = "EasyTicket2"
+include ':app'

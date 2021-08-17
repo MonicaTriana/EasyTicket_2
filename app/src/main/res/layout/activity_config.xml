@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config_activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="45dp"
+        android:textColor="#184BBE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/configuracion" />
+
+    <ImageView
+        android:id="@+id/ajustes"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/ajustes_negro"
+        android:divider = "#878787"
+        android:contentDescription="TODO"
+        android:layout_marginStart="45dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/calendario"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="45dp"
+        app:srcCompat="@drawable/calendario_negro"
+        android:divider = "#878787"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:text="@string/general"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="85dp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="149dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="162dp"
+        android:text="@string/periodo"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="85dp" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="232dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"/>
+
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="191dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"/>
+
+
+    <ImageView
+        android:id="@+id/imagentexto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="38dp"
+        app:srcCompat="@drawable/imagen_a_texto"
+        android:divider = "@color/black"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/imagentexto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:layout_marginStart="85dp"
+        android:text="@string/imagen_a_texto"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/escaner"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginStart="43dp"
+        app:srcCompat="@drawable/escanear_negro"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/escannear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:layout_marginStart="85dp"
+        android:text="@string/escanear"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="283dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="60dp"
+            app:srcCompat="@drawable/casablanca"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="128dp"
+            app:srcCompat="@drawable/busqueda"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/camera1"
+
+            android:layout_marginStart="197dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="263dp"
+            app:srcCompat="@drawable/ajustes_vacio"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ayuda"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginLeft="45dp"
+        app:srcCompat="@drawable/help_negro"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="85dp"
+        android:text="@string/ayuda_y_opini_n"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

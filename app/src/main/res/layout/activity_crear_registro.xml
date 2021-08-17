@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/logodos"
+        android:layout_marginStart="10dp"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir total de ticket"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#184BBE"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView7">
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/nombretienda"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:hint="Nombre de la tienda"
+        android:layout_below="@+id/titulo">
+    </EditText>
+
+    <EditText
+        android:id="@+id/costo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:hint="Costo de la compra"
+        android:layout_below="@+id/nombretienda">
+    </EditText>
+
+    <EditText
+        android:id="@+id/fechacompra"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:inputType="date"
+        android:layout_below="@+id/costo">
+    </EditText>
+
+    <EditText
+        android:id="@+id/horacompra"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:inputType="time"
+        android:layout_below="@+id/fechacompra">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/horacompra"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corners_blue">
+
+    </Button>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/casa1"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="128dp"
+            app:srcCompat="@drawable/busqueda"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="197dp"
+            app:srcCompat="@drawable/camera1"
+
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="263dp"
+            app:srcCompat="@drawable/ajustes_vacio"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

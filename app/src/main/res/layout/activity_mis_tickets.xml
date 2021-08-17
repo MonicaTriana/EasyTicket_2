@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisTickets_activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/logodos"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/todo"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imageView7"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/mi_presupuesto1"
+        android:textAllCaps="false"
+        android:textColor="#0794FE"
+        android:textSize="10sp"
+        android:layout_marginStart="10dp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imageView7"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/mis_gastos1"
+        android:textAllCaps="false"
+        android:textColor="#0794FE"
+        android:textSize="10sp"
+        android:layout_marginStart="127dp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="110dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/imageView7"
+        android:background="@drawable/rounded_corners_blue"
+        android:text="@string/mis_tickets1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="243dp"
+        tools:ignore="SmallSp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/casablanca"
+            android:layout_marginStart="60dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/busqueda"
+            android:layout_marginStart="128dp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/camera1"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="197dp" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ajustes_vacio"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="263dp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardsoriana"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/logo_soriana"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/logosoriana"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="15dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/hace_2_dias"
+            android:layout_marginStart="135dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/_390_51"
+            android:layout_marginStart="270dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardesmeralda"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardsoriana"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/esmeralda"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/esmeralda"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="15dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/hace_15_dias"
+            android:layout_marginStart="135dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/_536_19"
+            android:layout_marginStart="270dp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_alsuper"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/cardesmeralda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/alsuper"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/alsuper"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/fechaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/hace_2_meses"
+            android:layout_marginStart="135dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/_835_69"
+            android:layout_marginStart="270dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_walmart"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/card_alsuper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/walmart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/walmart"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="15dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fecha_walmart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/hace_3_meses"
+            android:layout_marginStart="135dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/_536_19"
+            android:layout_marginStart="270dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_bodega"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/card_walmart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/bodega"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/bodega"
+            android:contentDescription="@string/todo"
+            android:layout_marginStart="15dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fecha_bodega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/hace_3_meses"
+            android:layout_marginStart="135dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/_795_82"
+            android:layout_marginStart="270dp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

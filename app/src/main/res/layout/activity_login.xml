@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="268dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/primerlogo"
+        android:contentDescription="TODO" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="35dp"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:layout_marginTop="18dp"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_below="@id/edtpassword"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="Iniciar sesión" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView2"/>
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="220dp"
+        app:srcCompat="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text=" O " />
+
+</RelativeLayout>

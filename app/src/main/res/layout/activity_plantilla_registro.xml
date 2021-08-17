@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cuadro_texto"
+            android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/idregistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:text="@string/id"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textColor="#184BBE"/>
+
+            <TextView
+                android:id="@+id/nombretienda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/idregistro"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="18dp"
+                android:text="@string/nombre_tienda"
+                android:textStyle="bold"
+                android:textColor="#184BBE"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/idregistro"
+                android:layout_below="@+id/nombretienda"
+                android:layout_marginStart="18dp"
+                android:text="FECHA:"
+                android:textColor="#184BBE"/>
+            <TextView
+                android:id="@+id/fechacompra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/idregistro"
+                android:layout_below="@+id/fecha"
+                android:textStyle="bold"
+                android:layout_marginStart="18dp"
+                android:text="@string/_10_agosto_2021"
+                android:textColor="#184BBE"/>
+
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/fecha"
+                android:layout_marginStart="90dp"
+                android:text="HORA:"
+                android:textColor="#184BBE"/>
+
+            <TextView
+                android:id="@+id/horacompra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_below="@+id/hora"
+                android:layout_toEndOf="@+id/fecha"
+                android:layout_marginStart="87dp"
+                android:textStyle="bold"
+                android:text="@string/_9_34"
+                android:textColor="#184BBE"/>
+
+            <TextView
+                android:id="@+id/costo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="$200.00"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="18dp"
+                android:textStyle="bold"
+                android:textColor="#184BBE"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

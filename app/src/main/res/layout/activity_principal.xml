@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/logodos"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/finanzas"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="-47dp"
+        android:layout_marginStart="20dp"
+        android:text="UNETE AL CAMBIO"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Con Easy Ticket podrás tener un mejor control de tus finanzas, capturar cada ticket al momento de realizar una compra, comparar precios y ahorrar."
+        android:textColor="#505050"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_iniciar_sesion"
+        android:layout_width="155dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_below="@id/textView1"
+        android:layout_toEndOf="@id/btn_crear_cuenta"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="10dp"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_crear_cuenta"
+        android:layout_width="155dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        android:text="Crear cuenta"
+        android:textColor="#FFFFFF"
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="-83dp"
+        app:srcCompat="@drawable/lineas_menu" />
+
+
+</RelativeLayout>

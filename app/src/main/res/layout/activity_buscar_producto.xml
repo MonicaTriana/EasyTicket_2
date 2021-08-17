@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarProducto_activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/casablanca"
+            android:layout_marginStart="60dp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="128dp"
+            app:srcCompat="@drawable/busqueda"
+            android:layout_marginStart="128dp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="197dp"
+            app:srcCompat="@drawable/camera1"
+
+            android:layout_marginStart="197dp" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="263dp"
+            app:srcCompat="@drawable/ajustes_vacio"
+            android:layout_marginStart="263dp" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:hint="Ingresar producto"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@color/white"
+        android:text="Buscar"
+        android:layout_marginStart="200dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/editTextTextPersonName"
+        android:text="Resultados:"
+        android:layout_marginStart="25dp" />
+
+    <ImageView
+        android:id="@+id/alsuper"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/result"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/alsuper"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/alsuper"
+        android:text="Zucaritas Kelloggs 250gr       $63.10"
+        android:layout_toEndOf="@id/alsuper"
+        android:layout_marginStart="25dp" />
+
+    <ImageView
+        android:id="@+id/aurrera"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/alsuper"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/bodega"
+        android:contentDescription="TODO"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result1"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/alsuper"
+        android:text="Zucaritas Kelloggs 250gr       $49.89"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@id/alsuper" />
+
+</RelativeLayout>

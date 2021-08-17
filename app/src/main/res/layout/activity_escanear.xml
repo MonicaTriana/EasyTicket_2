@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".escanear_activity">
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/casablanca" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="128dp"
+            app:srcCompat="@drawable/busqueda"
+            />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="197dp"
+            app:srcCompat="@drawable/camera1"
+
+            />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="263dp"
+            app:srcCompat="@drawable/ajustes_vacio" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:text="Escanea tu ticket" />
+
+    <Button
+        android:id="@+id/btnimagen"
+        android:layout_width="155dp"
+        android:layout_height="28dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="190dp"
+        android:textColor="@color/white"
+        android:text="Imagen escaneada" />
+
+
+    <Button
+        android:id="@+id/btntexto"
+        android:layout_width="155dp"
+        android:layout_height="28dp"
+        android:background="@drawable/rounded_corners_blue"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        android:text="Imagen a texto" />
+
+
+</RelativeLayout>

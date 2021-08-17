@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketEscaneado_activity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ticket"
+        android:layout_width="325dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#D6D6D6"
+        >
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="70dp"
+            android:text="TICKET" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/recortar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/ticket"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="70dp"
+        app:srcCompat="@drawable/recortar" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recortar"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:text="Recortar" />
+
+    <ImageView
+        android:id="@+id/convertir"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/ticket"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="230dp"
+        app:srcCompat="@drawable/imagen_a_texto" />
+
+    <TextView
+        android:id="@+id/txtconvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recortar"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="205dp"
+        android:textColor="@color/black"
+        android:text="Convertir a texto" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="#1C57DB">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/casablanca" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="128dp"
+            app:srcCompat="@drawable/busqueda"
+            />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="197dp"
+            app:srcCompat="@drawable/camera1"
+
+            />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="263dp"
+            app:srcCompat="@drawable/ajustes_vacio" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easyticket2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".crear_registro_activity"></activity>
+        <activity android:name=".registro_activity" />
+        <activity android:name=".TicketTexto_activity" />
+        <activity android:name=".TicketEscaneado_activity" />
+        <activity android:name=".principal_activity" />
+        <activity android:name=".MiTicket_activity" />
+        <activity android:name=".MisTickets_activity" />
+        <activity android:name=".MiPresupuesto_activity" />
+        <activity android:name=".menu_activity" />
+        <activity android:name=".login_activity" />
+        <activity android:name=".escanear_activity" />
+        <activity android:name=".cuenta_activity" />
+        <activity android:name=".crear_cuenta_activity" />
+        <activity android:name=".config_activity" />
+        <activity android:name=".BuscarProducto_activity" />
+        <activity android:name=".splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
