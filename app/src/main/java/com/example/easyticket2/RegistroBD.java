@@ -15,8 +15,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 
-public class RegistroBD {
-    long ultimoid;
+public class  RegistroBD {
+
     /*
     //Fecha y hora del sistema
     Date fecha = Calendar.getInstance().getTime();
@@ -98,26 +98,5 @@ public class RegistroBD {
         this.hora = hora;
     }
 
-    public void createRegistro(String nombre, String costo, String fecha, String hora){
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        String dispositivo = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        DatabaseReference myRef = database.getReference(dispositivo).child("registro");
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot snapshot) {
-                if (snapshot.exists()){
-                    ultimoid = (snapshot.getChildrenCount());
-                }
-            }
 
-            @Override
-            public void onCancelled(DatabaseError error) {
-
-            }
-        });
-        String id = String.valueOf(ultimoid+1);
-        RegistroBD registroBD = new RegistroBD(id, costo, nombre, fecha, hora);
-        //myRef.setValue(registroBD);
-        myRef.child(id).setValue(registroBD);
-    }
 }

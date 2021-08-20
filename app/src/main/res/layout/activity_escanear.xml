@@ -52,21 +52,19 @@
             app:srcCompat="@drawable/ajustes_vacio" />
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textColor="@color/black"
-        android:text="Escanea tu ticket" />
+    <ImageView
+        android:id="@+id/imageviewcamera"
+        android:layout_width="match_parent"
+        android:layout_height="590dp">
+
+    </ImageView>
 
     <Button
-        android:id="@+id/btnimagen"
+        android:id="@+id/btnCamara"
         android:layout_width="155dp"
         android:layout_height="28dp"
         android:background="@drawable/rounded_corners_blue"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="640dp"
         android:layout_marginLeft="190dp"
         android:textColor="@color/white"
         android:text="Imagen escaneada" />
@@ -77,7 +75,7 @@
         android:layout_width="155dp"
         android:layout_height="28dp"
         android:background="@drawable/rounded_corners_blue"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="640dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/white"
         android:text="Imagen a texto" />

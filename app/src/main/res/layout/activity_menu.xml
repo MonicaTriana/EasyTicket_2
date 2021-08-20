@@ -81,7 +81,7 @@
             tools:ignore="ContentDescription" />
 
         <ImageView
-            android:id="@+id/camera"
+            android:id="@+id/btncamera"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginTop="15dp"
@@ -137,8 +137,5 @@
 
 
     </androidx.cardview.widget.CardView>
-
-
-
 
 </RelativeLayout>

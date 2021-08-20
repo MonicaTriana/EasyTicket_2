@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.easyticket2">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"></uses-feature>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +16,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".crear_registro_activity"></activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.easyticket2"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".crear_registro_activity" />
         <activity android:name=".registro_activity" />
         <activity android:name=".TicketTexto_activity" />
         <activity android:name=".TicketEscaneado_activity" />

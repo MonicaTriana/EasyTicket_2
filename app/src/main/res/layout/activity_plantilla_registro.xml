@@ -26,7 +26,7 @@
             android:textColor="#184BBE"/>
 
             <TextView
-                android:id="@+id/nombretienda"
+                android:id="@+id/costo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_toEndOf="@+id/idregistro"
-                android:layout_below="@+id/nombretienda"
+                android:layout_below="@+id/costo"
                 android:layout_marginStart="18dp"
                 android:text="FECHA:"
                 android:textColor="#184BBE"/>
@@ -84,7 +84,7 @@
                 android:textColor="#184BBE"/>
 
             <TextView
-                android:id="@+id/costo"
+                android:id="@+id/nombretienda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
